@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Bermuda de Compressão | Runners Fit</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Bermuda de compressão para corrida. Para quem se movimenta, se desafia e não para.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <style>
     body {
@@ -14,10 +14,7 @@
       color: #f2f2f2;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    a { text-decoration: none; color: inherit; }
 
     header {
       background: #000;
@@ -55,38 +52,35 @@
       padding: 60px 20px;
     }
 
+    .produto {
+      background: #1a1a1a;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .imagem-produto {
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      margin: 0 auto 25px;
+      display: block;
+      border-radius: 12px;
+    }
+
     h1 {
-      font-size: 36px;
+      font-size: 34px;
       margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 0;
     }
 
     p {
       opacity: 0.9;
       line-height: 1.6;
-    }
-
-    .produto {
-      margin-top: 40px;
-      background: #1a1a1a;
-      padding: 30px;
-      border-radius: 12px;
-      text-align: center;
-    }
-
-    /* 🔥 CSS DA IMAGEM (AQUI ESTAVA O PROBLEMA) */
-    .imagem-produto {
-      width: 100%;
-      max-width: 420px;
-      height: auto;               /* NÃO distorce */
-      display: block;
-      margin: 0 auto 25px;
-      border-radius: 12px;
-
-      image-rendering: auto;      /* mantém suavidade */
-    }
-
-    h2 {
-      margin-top: 0;
     }
 
     .botao {
@@ -97,16 +91,76 @@
       color: #000;
       border-radius: 30px;
       font-weight: bold;
-      transition: transform 0.2s ease;
-    }
-
-    .botao:hover {
-      transform: scale(1.05);
     }
 
     footer {
       background: #000;
       text-align: center;
       padding: 25px;
-      fon
+      font-size: 14px;
+      opacity: 0.8;
+    }
+  </style>
+</head>
 
+<body>
+
+<!-- HEADER PADRÃO DO SITE -->
+<header>
+  <div class="topbar">
+    <div class="logo">RUNNERS FIT</div>
+    <nav>
+      <a href="index.html">Todos os Produtos</a>
+      <a href="bermuda.html">Bermuda</a>
+      <a href="camiseta.html">Camiseta</a>
+      <a href="regata.html">Regata</a>
+      <a href="chaveiros.html">Chaveiros</a>
+      <a href="viseiras.html">Viseiras</a>
+      <a href="novidades.html">Novidades</a>
+      <a href="sobre.html">Sobre nós</a>
+    </nav>
+  </div>
+</header>
+
+<!-- CONTEÚDO EXCLUSIVO DA BERMUDA -->
+<main>
+
+  <h1>Bermuda de Compressão</h1>
+
+  <p>
+    Desenvolvida para quem corre, treina e não para.
+    Compressão inteligente para máxima performance.
+  </p>
+
+  <div class="produto">
+
+    <img
+      src="assets/images/bermuda/bermuda-preta.jpg"
+      alt="Bermuda de compressão preta Runners Fit"
+      class="imagem-produto"
+    >
+
+    <h2>Bermuda Compressão Runners Fit</h2>
+
+    <p>
+      ✔ Movimento livre<br>
+      ✔ Músculos protegidos<br>
+      ✔ Performance elevada
+    </p>
+
+    <a
+      class="botao"
+      href="https://wa.me/5511994588976?text=Tenho%20interesse%20na%20Bermuda%20de%20Compressão">
+      Comprar pelo WhatsApp
+    </a>
+
+  </div>
+
+</main>
+
+<footer>
+  © 2026 Runners Fit
+</footer>
+
+</body>
+</html>
